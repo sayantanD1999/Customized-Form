@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="customizedForm2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: rgb(0, 52, 110)">𝕱𝖔𝖗𝖒𝖘</h1>
+    <br><br>
+    <p id="subheading" data-aos="zoom-in" data-aos-duration="2000" >Concisely describe <br> your needs</p>
+
+    <div class="row">
+        <div class="col-lg-6 pr-0 pl-0">
+            <div data-aos="fade-up" data-aos-duration="2000" class="landing-page">
+                <p style="font-size: 25px; font-weight: bolder; color: rgb(0, 0, 0); line-height: 2;">
+                    <span id="keyword">Create </span>Your Own Forms <br>
+                    <span id="keyword">Design </span>Your Own Forms <br>
+                    <span id="keyword">Customize </span>Your own Forms <br>
+                    <span id="keyword">Share </span>Them<br>
+                    <span id="keyword">Utilize </span>Them For Real Purposes <br>
+
+                    <a href="#form"><button id="start"> Start Designing
+                        </button></a>
+
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 pr-0 pl-0">
+            <div class="landing-page" data-aos="fade-up" data-aos-duration="3000">
+                <img src="bgImg.png" id="landing-img" height="70%" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="form">
+        <div class="col-md-6 pr-0 pl-0 ">
+            <div id="demo">
+                <div class="row">
+                    <div class="col">
+                        <label>Enter the heading of the form</label>
+                    </div>
+                    <div class="col">
+                        <input class="ip" type="text" id="getheading" onchange="heading()">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label>Enter your question</label>
+                    </div>
+                    <div class="col">
+                        <input class="ip" type="text" id="setlabel">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label>Select your input type</label>
+                    </div>
+                    <div class="col">
+                        <select class="ip" name="control" id="Iptype">
+                            <option value="text">Text</option>
+                            <option value="number">Number</option>
+                            <option value="password">Password</option>
+                            <option value="date">Date</option>
+                            <option value="time">Time</option>
+                            <option value="range">Range</option>
+                            <option value="url">URL</option>
+                            <option value="file">File</option>
+                            <option value="color">Color</option>
+                            <option value="tel">Telephone</option>
+                            <option value="checkbox">Check-Box</option>
+                            <option value="radio">Radio</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <button style="margin-bottom: 40px;" onclick="createIP()">Create</button>
+
+                <div id="demo2">
+
+                </div>
+                <div id="demo3">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pr-0 pl-0">
+            <div id="preview">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand">Preview Of Your Form</a>
+                    <form class="form-inline">
+                        <button class="btn btn-outline-success my-2 my-sm-0" style="width: auto;" id="dwn-btn"
+                            type="submit">Download Form</button>
+                    </form>
+                </nav>
+                <div id="opt">
+                    <div id="dropdiv" ondrop="drop(event)" ondragover="allowDrop(event)">Drag the element here you want
+                        to delete. <br> Label editing is also enabled.
+                    </div>
+                    <button style="float: left; display: none;" id="save" onclick="save()" disabled>Save</button>
+                    <button style="float: right; display: none;" id="edit" onclick="edit()">Edit</button>
+                </div>
+                <div id="container">
+                    <h1 style="text-align: center; margin: auto;" id="setheading"></h1>
+                    <div id="contents" class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="customizedForm2.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

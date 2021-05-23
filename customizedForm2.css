@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #ffffff;
+}
+
+#heading {
+    text-align: center;
+}
+
+#subheading {
+    text-align: center;
+    font-size: 300%;
+    line-height: normal;
+    font-family: Nunito;
+    color: rgb(0, 52, 110);
+    font-style: normal;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+.landing-page{
+    padding-left: 10px;
+}
+
+#setheading {
+    padding-bottom: 50px;
+}
+
+label {
+    float: left;
+}
+
+#keyword {
+    color: rgb(0, 52, 110);
+}
+
+#start {
+    color: #ddd;
+    background-color: rgb(0, 52, 110);
+    width: 300px;
+    height: 50px;
+    outline: none;
+}
+
+#landing-img{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 5px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.col-md-6 {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-6 {
+    display: flex;
+    justify-content: center;
+    /* height: 80vh; */
+    padding-top: 10vh;
+}
+
+.row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ip {
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 70%;
+    text-align: left;
+    border-radius: 5px;
+    outline: none;
+}
+
+.label {
+    float: right;
+}
+
+#demo {
+    /* background: rgb(0, 0, 0,0.55); */
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    /* backdrop-filter: blur(8px);  */
+    width: 100%;
+    height: 100vh;
+    float: left;
+    border: 1px solid #000;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#preview {
+    /* background: rgb(0, 0, 0,0.5); */
+    overflow-y: auto;
+    width: 100%;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    float: right;
+    height: 100vh;
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: rgb(209, 248, 255);
+    transition: 0.5s;
+}
+
+.para {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.radioboxinput, .para2 {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.ip2 {
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+}
+
+button {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    background-color: floralwhite;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: small;
+}
+
+i {
+    cursor: pointer;
+    font-size: 400px;
+}
+
+#dropdiv {
+    margin: auto;
+    height: 70px;
+    width: 75%;
+    border-radius: 5px;
+    background-color: rgba(132, 209, 240, 0.5);
+    text-align: center;
+    display: none;
+}
+
+#opt {
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
